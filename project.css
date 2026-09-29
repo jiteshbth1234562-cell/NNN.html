@@ -1,0 +1,78 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT584fv0JYLGkRO_FZTH3t9ZkKpWoldSUvSb6BWAa0SQA&s=10');
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main {
+            width: 360px;
+            background: rgba(0, 0, 0, 0.65);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            padding: 40px 30px;
+        }
+
+        .main form {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+
+        .main h1 {
+            color: #ffffff;
+            font-size: 24px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .main form input {
+            width: 100%;
+            padding: 12px 10px;
+            background: transparent;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+            color: #ffffff;
+            font-size: 14px;
+            transition: border-color 0.3s ease;
+        }
+
+        .main form input::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .main form input:focus {
+            border-bottom-color: #00d2ff;
+        }
+
+        .btn button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 10px;
+            background: #00d2ff;
+            border: none;
+            border-radius: 8px;
+            color: #ffffff;
+            font-weight: 600;
+            font-size: 15px;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+
+        .btn button:hover {
+            background: #0099cc;
+            transform: translateY(-2px);
+        }
